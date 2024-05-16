@@ -1,0 +1,7 @@
+1- Pegar um numero X inteiro e positivo
+
+2- Multiplicar pelo seus antecessores (5! 5.4.3.2.1)
+
+3- X = 1
+
+4- Resultado

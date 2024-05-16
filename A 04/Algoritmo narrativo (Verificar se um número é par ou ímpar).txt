@@ -1,0 +1,9 @@
+1- Solicitar um valor numerico.
+
+2- divida esse valor por 2.
+
+3- Seu numero possui resto?
+
+4- (se sim) e impar.
+
+5- (se não) e par.

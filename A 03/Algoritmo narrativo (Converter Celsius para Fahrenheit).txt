@@ -1,0 +1,5 @@
+1- Existe uma fórmula que determina uma relação entre as temperaturas.
+
+2- A formula para calcular uma temperatura de Celsius para Fahrenheit e: Fahrenheit = (Celsius * 9/5) + 32.
+
+3- Agora o resultado exibido e o valor em Fahrenhit.

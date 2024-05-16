@@ -1,0 +1,11 @@
+1- Para a solução do problema. Basta colocar os 2 valores que você queira dividir para saber a media.
+
+2- Escreva os valores, como exemplo ( 10 pontos e 8 pontos ).
+
+3- Soma os 2 valores.
+
+4- O sistema ira dividir a soma dos 2 valores por 2.
+
+5- Agora o sistema ira carregar o resultado.
+
+6- E pronto. A media da sua nota (do exemplo) e 9.
