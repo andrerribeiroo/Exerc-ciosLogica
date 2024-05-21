@@ -1,0 +1,32 @@
+<script>
+     
+  const nome = prompt("Escreva o nome do seu NPC:");
+  const nivel = parseInt(prompt("Escreva o nivel do seu NPC:"));
+
+  
+  const classificationTable = [
+    { minLevel: 9, maxLevel: 10, classification: 'A' },
+    { minLevel: 7, maxLevel: 8, classification: 'B' },
+    { minLevel: 5, maxLevel: 6, classification: 'C' },
+    { minLevel: 3, maxLevel: 4, classification: 'D' },
+    { minLevel: 0, maxLevel: 2, classification: 'R' },
+  ];
+
+  
+  const classification = classificationTable.find(
+    (classification) => nivel >= classification.minLevel && nivel <= classification.maxLevel
+  );
+
+  
+  if (classification) {
+    alert(`Nome do seu NPC e : ${nome} , e a Classificacao dele e : ${classification.classification}.`);
+  }
+
+  else {
+    alert(`Nome: ${nome}, Classificacao: Nao invalido`);
+  }
+
+
+calculateClassification();
+
+</script>
