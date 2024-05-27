@@ -1,0 +1,56 @@
+<script>
+    
+    let nome = prompt("Digite o nome do segurado:");
+    let idade = parseInt(prompt("Digite a idade do segurado:"));
+    let grupoRisco = prompt("Digite o grupo de risco (b, m ou a):");
+
+    let categoria;
+
+    if (idade < 17 || idade > 70) {
+        categoria = "Idade inválida para adquirir seguro";
+    } 
+    else {
+        switch (grupoRisco) {
+            case 'b':
+                if (idade >= 17 && idade <= 30) {
+                    categoria = "1B";
+                } else if (idade > 30 && idade <= 40) {
+                    categoria = "2B";
+                } else if (idade > 40 && idade <= 50) {
+                    categoria = "3B";
+                } else if (idade > 50 && idade <= 70) {
+                    categoria = "4B";
+                }
+                break;
+
+            case 'm':
+                if (idade >= 17 && idade <= 30) {
+                    categoria = "1M";
+                } else if (idade > 30 && idade <= 40) {
+                    categoria = "2M";
+                } else if (idade > 40 && idade <= 50) {
+                    categoria = "3M";
+                } else if (idade > 50 && idade <= 70) {
+                    categoria = "4M";
+                }
+                break;
+            case 'a':
+
+                if (idade >= 17 && idade <= 30) {
+                    categoria = "1A";
+                } else if (idade > 30 && idade <= 40) {
+                    categoria = "2A";
+                } else if (idade > 40 && idade <= 50) {
+                    categoria = "3A";
+                } else if (idade > 50 && idade <= 70) {
+                    categoria = "4A";
+                }
+                break;
+            default:
+                categoria = "Grupo de risco inválido";
+        }
+    }
+
+    alert("A categoria do seguro é : " + categoria + " - " + nome + " (" + idade + " anos.)");
+    
+</script>

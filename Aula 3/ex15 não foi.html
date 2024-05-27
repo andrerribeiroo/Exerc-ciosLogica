@@ -1,0 +1,39 @@
+<script>
+     
+    let A = parseFloat(prompt("Informe o valor A"));
+    let B = parseFloat(prompt("Informe o valor B"));
+    let C = prompt("Informe o símbolo de operador aritmético Ex : (+ - / *).");
+  
+    let resultado;
+  
+    switch (C) {
+      case "+":
+        resultado = A + B;
+        console.log("Resultado da operação: " + resultado);
+        break;
+
+      case "-":
+        resultado = A - B;
+        console.log("Resultado da operação: " + resultado);
+        break;
+
+      case "*":
+        resultado = A * B;
+        console.log("Resultado da operação: " + resultado);
+        break;
+
+      case "/":
+        if (B == 0) {
+          console.log("Erro: Divisão por zero!");
+          return;
+        }
+
+        resultado = A / B;
+        console.log("Resultado da operação: " + resultado);
+        break;
+
+      default:
+        console.log("Operador não definido!");
+    }
+  
+  </script>

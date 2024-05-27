@@ -1,0 +1,23 @@
+<script>
+     
+    let nota1 = parseFloat(prompt("Informe a primeira nota:"));
+    let nota2 = parseFloat(prompt("Informe a segunda nota:"));
+    let nota3 = parseFloat(prompt("Informe a terceira nota:"));
+    let opcao = parseInt(prompt("Escolha o tipo de média:\n1 - Aritmética\n2 - Ponderada"));
+  
+    let media;
+  
+    switch (opcao) {
+      case 1:
+        media = (nota1 + nota2 + nota3) / 3;
+        alert("Média Aritmética: " + media );
+        break;
+      case 2:
+        media = (nota1 * 3 + nota2 * 3 + nota3 * 4) / 10;
+        alert("Média Ponderada: " + media);
+        break;
+      default:
+        alert("Opção inválida!");
+    }
+  
+  </script>

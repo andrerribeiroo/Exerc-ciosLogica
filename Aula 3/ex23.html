@@ -1,0 +1,12 @@
+<script>
+    let inicio = parseInt(prompt("Que horas você começou a jogar ? "));
+    let fim = parseInt(prompt("Que horas você parou de jogar ?"));
+
+    let tempo = fim - inicio;
+
+    if (inicio > fim){
+        tempo+= 24;
+    }
+    alert("A duração do jogo é de " + tempo +  " horas.");
+
+</script>

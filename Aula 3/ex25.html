@@ -1,0 +1,25 @@
+<script>
+    
+  let indice = parseFloat(prompt("Digite o índice de poluição:"));
+
+  if (indice >= 0.5) {
+    alert("Todas as indústrias devem paralisar suas atividades.");
+  } 
+  
+  else if (indice >= 0.4) {
+    alert("As indústrias do 1º e 2º grupo devem suspender suas atividades.");
+  } 
+  
+  else if (indice >= 0.3) {
+    alert("As indústrias do 1º grupo devem suspender suas atividades.");
+  } 
+  
+  else if (indice < 0.05) {
+    alert("O índice de poluição está dentro dos limites aceitáveis.");
+  } 
+  
+  else {
+    alert("O índice de poluição está acima dos limites aceitáveis, mas ainda não atingiu o nível de suspensão de atividades.");
+  }
+
+</script>

@@ -1,0 +1,27 @@
+<script>
+
+let hora = prompt("informe o nivel do KW/h. ( 1, 2 e 3. )");
+let calculo = prompt("informe o valor gasto do KW/h.");
+let valorluz = 0;
+
+switch (hora) {
+  case "1":
+    let Residência = 0.60 ;
+    valorluz = Residência * calculo;
+    alert ("Sua conta por mês e R$ : " + valorluz);
+    break;
+
+  case "2":
+    let Comércio = 0.48  ;
+    valorluz = calculo * Comércio;
+    alert ("Sua conta por mês e R$ : " + valorluz);
+    break;
+  case "3":
+    let Indústria = 1.29 ;
+    valorluz = calculo * Indústria;
+    alert ("Sua conta por mês e R$ : " + valorluz);
+    break;
+}
+
+
+</script>

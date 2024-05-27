@@ -1,0 +1,24 @@
+<script>
+     
+    let lado1 = parseInt(prompt("Informe o comprimento do primeiro lado:"));
+    let lado2 = parseInt(prompt("Informe o comprimento do segundo lado:"));
+    let lado3 = parseInt(prompt("Informe o comprimento do terceiro lado:"));
+  
+    if (lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {
+      alert("Não é possível formar um triângulo com os valores informados!");
+    } 
+    else {
+      if (lado1 === lado2 && lado2 === lado3) {
+        alert("Triângulo Equilátero");
+      }
+
+      else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+        alert("Triângulo Isóscele");
+      }
+      
+      else {
+        alert("Triângulo Escaleno");
+      }
+    }
+  
+  </script>

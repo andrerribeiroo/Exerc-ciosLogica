@@ -1,0 +1,30 @@
+<script>
+     
+    let codigo = parseInt(prompt("Informe o código do produto: (codigos: 1001, 1324, 6548, 987, 7623.)"));
+    let quantidade = parseInt(prompt("Informe a quantidade comprada:"));
+    
+    let preco;
+  
+    switch (codigo) {
+      case 1001:
+        preco = 5.32;
+        break;
+      case 1324:
+        preco = 6.45;
+        break;
+      case 6548:
+        preco = 2.37;
+        break;
+    case 987:
+        preco = 5.32;
+        break;
+      case 7623:
+        preco = 6.45;
+        break;
+
+    }
+  
+    let total = preco * quantidade;
+    alert("Preço total: R$ : " + total);
+  
+  </script>

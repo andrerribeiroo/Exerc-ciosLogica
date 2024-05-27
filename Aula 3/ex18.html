@@ -1,0 +1,29 @@
+<script>
+     
+    let salario = parseFloat(prompt("Informe o salário do funcionário:"));
+    let cargo = prompt("Informe o cargo do funcionário (1- Gerente, 2- Engenheiro, 3- Técnico):");
+    
+    let aumento;
+    let novoSalario;
+  
+    switch (cargo) {
+      case "1":
+        aumento = 0.1;
+        break;
+      case "2":
+        aumento = 0.2;
+        break;
+      case "3":
+        aumento = 0.3;
+        break;
+
+      default:
+        aumento = 0.4;
+    }
+  
+    novoSalario = salario * (1 + aumento);
+    let diferenca = novoSalario - salario;
+  
+    alert("Salário antigo: R$ " + salario + "\nNovo salário: R$ " + novoSalario + "\nDiferença: R$ " + diferenca);
+  
+  </script>
