@@ -1,0 +1,16 @@
+<script>
+    let NumeroInteiro = 0;
+    let Contador = 0;
+    let SomaAtual = 0;
+
+    while(NumeroInteiro >= 0){
+        NumeroInteiro = parseInt(prompt("Insira um número inteiro"));
+
+        if(NumeroInteiro >= 0){
+            SomaAtual += NumeroInteiro;
+            Contador++;
+        }
+
+    }
+    alert("A media aritmetica e : "+ SomaAtual/Contador);
+</script>
