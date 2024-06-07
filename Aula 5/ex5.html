@@ -1,0 +1,41 @@
+<script>
+
+let pessoas = [];
+let aptas = 0;
+let naoAptas = 0;
+
+do {
+  let pessoa = {};
+  pessoa.nome = prompt("Digite seu nome: ");
+  pessoa.sexo = prompt("Digite seu sexo (m/f): ");
+  pessoa.idade = parseInt(prompt("Digite sua idade: "));
+  pessoa.saude = prompt("Você tem alguma doença ou deficiência? (s/n): ");
+
+  if (pessoa.sexo === "m" && pessoa.idade >= 18 && pessoa.saude === "n") {
+    pessoa.aptidao = "Apto";
+    aptas++;
+  } 
+  
+  else if (pessoa.sexo === "f" && pessoa.idade >= 18 && pessoa.saude === "n") {
+    pessoa.aptidao = "Apta";
+    aptas++;
+  } 
+  
+  else {
+    pessoa.aptidao = "Não Apto";
+    naoAptas++;
+  }
+
+  pessoas.push(pessoa);
+
+  let continuar = prompt("Deseja continuar? (s/n): ");
+
+  if (continuar === "n") {
+    break;
+  }
+}
+while (true);
+
+
+alert("Pessoas aptas: " + aptas +"\nPessoas não aptas: " + naoAptas);
+</script>

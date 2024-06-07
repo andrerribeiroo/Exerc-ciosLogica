@@ -1,0 +1,30 @@
+
+<script>
+    let prom = [];
+
+    let opcoes = 0;
+
+    do {
+        opcoes = parseInt(prompt("digite 1 para adicionar\n digite 2 aparecer a lista. \n digite 0 para encerrar"));
+
+    switch (opcoes) {
+        case 1:
+            prom.push(prompt("digite algo para a colecao."));
+            break;
+
+            case 2:
+                alert(prom.join("\n"));
+                break;
+
+                    case 0: 
+                    alert("Você encerrou a aplicacao.");
+                    break;
+
+                        default:
+                            alert("Você não escolheu nenhuma opcao.");
+                            break;
+        }
+    }
+    while( opcoes != 0);
+
+</script>

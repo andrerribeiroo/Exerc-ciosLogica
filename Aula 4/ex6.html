@@ -1,3 +1,44 @@
 <script>
-    
+
+let candidato1 = 0;
+let candidato2 = 0;
+let candidato3 = 0;
+let candidato4 = 0;
+let votoNulo = 0;
+let votoBranco = 0;
+
+while (true) {
+  let voto = parseInt(prompt("Digite seu voto (1, 2, 3, 4, 5 e 6) ou 0 para finalizar"));
+
+  if (voto == 0) {
+    break;
+  }
+
+  switch (voto) {
+    case 1:
+      candidato1++;
+      break;
+    case 2:
+      candidato2++;
+      break;
+    case 3:
+      candidato3++;
+      break;
+    case 4:
+      candidato4++;
+      break;
+    case 5:
+      votoNulo++;
+      break;
+    case 6:
+      votoBranco++;
+      break;
+
+    default:
+      alert("Voto inválido!");
+  }
+}
+
+alert("Candidato 1: " + candidato1 + " votos.\nCandidato 2: " + candidato2 + " votos.\nCandidato 3: " + candidato3 + " votos.\nCandidato 4: " + candidato4 + " votos.\nVotos Nulos: " + votoNulo + " votos.\nVotos Brancos: " + votoBranco + " votos.");
+
 </script>

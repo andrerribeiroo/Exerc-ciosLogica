@@ -1,0 +1,23 @@
+<script>
+
+let codigoAluno = 0;
+let nota1 = 0;
+let nota2 = 0;
+let nota3 = 0;
+
+while (true) {
+  codigoAluno = parseInt(prompt("Insira o código do aluno (ou 0 para finalizar)"));
+
+  if (codigoAluno == 0) {
+    break;
+  }
+
+  nota1 = parseInt(prompt("Insira a primeira nota do aluno"));
+  nota2 = parseInt(prompt("Insira a segunda nota do aluno"));
+  nota3 = parseInt(prompt("Insira a terceira nota do aluno"));
+
+  let media = (nota1 + nota2 + nota3) / 3;
+
+  alert("A média do aluno : " + codigoAluno + "  e a media aritmedica é : " + media);
+}
+</script>
