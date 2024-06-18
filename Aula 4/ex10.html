@@ -1,0 +1,28 @@
+<script>
+    while (true) {
+        
+      let codigo = parseInt(prompt("Insira o código do aluno (ou um valor negativo para sair)"));
+
+      if (codigo < 0) {
+        break;
+      }
+  
+      let nota1 = parseFloat(prompt("Insira a primeira nota do aluno"));
+      let nota2 = parseFloat(prompt("Insira a segunda nota do aluno"));
+      let nota3 = parseFloat(prompt("Insira a terceira nota do aluno"));
+  
+      let notas = [nota1, nota2, nota3];
+      notas.sort(function(a, b) {
+        return b - a;
+      });
+  
+      let media = (notas[0] * 4 + notas[1] * 3 + notas[2] * 3) / 10;
+  
+      let mensagem = media >= 5 ? "APROVADO" : "REPROVADO";
+  
+      alert("Código do aluno: " + codigo);
+      alert("Notas: " + nota1 + ", " + nota2 + ", " + nota3);
+      alert("Média: " + media);
+      alert("Resultado: " + mensagem);
+    }
+  </script>

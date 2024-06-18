@@ -1,0 +1,23 @@
+<script>
+    let clientesNegativos = 0;
+    let totalClientes = 0;
+  
+    do {
+      let numeroDaConta = parseInt(prompt("Digite o número da conta: "));
+      let saldo = parseFloat(prompt("Digite o saldo da conta: "));
+  
+      totalClientes++;
+  
+      if (saldo < 0) {
+        clientesNegativos++;
+      }
+  
+      let continuar = prompt("Deseja continuar? (s/n): ");
+  
+      if (continuar === "n") {
+        break;
+      }
+    } while (true)
+  
+    alert("Total de clientes com saldo negativo: " + clientesNegativos + "\nTotal de clientes cadastrados: " + totalClientes);
+  </script>

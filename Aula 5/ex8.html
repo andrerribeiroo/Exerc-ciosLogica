@@ -1,0 +1,47 @@
+<script>
+
+let numeros = [];
+for (let i = 0; i < 10; i++) {
+  numeros.push(Math.floor(Math.random() * 10) + 1);
+}
+
+let compativel = 0;
+
+do {
+  let repeticao = parseInt(prompt("Digite o número do sorteio: "));
+
+  if (repeticao < 1 || repeticao > 10) {
+    compativel++;
+    alert("Esse número não está no sorteio.");
+  } 
+  
+  else {
+    let indices = [];
+    
+    for (let i = 0; i < numeros.length; i++) {
+      if (numeros[i] === repeticao) {
+        indices.push(i);
+      }
+    }
+    
+    if (indices.length > 1) {
+      alert("O número " + repeticao + " está no sorteio e se repete " + indices.length + " vezes nas posições " + indices.join(", ") + ".");
+    } 
+    
+    else {
+      alert("O número " + repeticao + " está no sorteio.");
+    }
+  }
+
+  let continuar = prompt("Deseja continuar? (s/n): ");
+
+  if (continuar === "n") {
+    break;
+  }
+} 
+
+while (true)
+
+alert("Você digitou " + compativel + " números inválidos.");
+
+</script>

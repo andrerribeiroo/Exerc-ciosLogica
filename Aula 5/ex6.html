@@ -1,3 +1,28 @@
 <script>
+    let alturas = [];
+    let superiorA2metros = 0;
+    let media = 0;
+  
+    for (let i = 0; i < 20; i++) {
+        
+      let altura = parseFloat(prompt("Digite a altura da pessoa " + (i + 1) + ": "));
+
+      alturas.push(altura);
+  
+      if (altura > 2.0) {
+        superiorA2metros++;
+      }
+
+    }
+  
+    let soma = 0;
+
+    for (let i = 0; i < alturas.length; i++) {
+      soma += alturas[i];
+    }
     
-</script>
+    media = soma / 20;
+  
+    alert("A média de altura é de " + media + " metros" + "\n Número de pessoas com altura superior a 2 metros: " + superiorA2metros);
+
+  </script>

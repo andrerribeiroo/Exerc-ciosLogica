@@ -1,0 +1,23 @@
+<script>
+    let bandas = [];
+
+for (let i = 0; i < 5; i++) {
+  let banda = {
+    nome: prompt("Digite o nome da banda " + (i + 1) + ": "),
+    musica: prompt("Digite o tipo de música da banda " + (i + 1) + ": "),
+    integrantes: parseInt(prompt("Digite o número de integrantes da banda " + (i + 1) + ": ")),
+    ranking: parseInt(prompt("Digite o ranking da banda " + (i + 1) + " (1-5): "))
+  };
+  bandas.push(banda);
+}
+
+for (let i = 0; i < bandas.length; i++) {
+  let banda = bandas[i];
+  alert("Banda " + (i + 1) + ":");
+  alert("Nome: " + banda.nome);
+  alert("Música: " + banda.musica);
+  alert("Integrantes: " + banda.integrantes);
+  alert("Ranking: " + banda.ranking);
+  alert("");
+}
+</script>
