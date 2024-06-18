@@ -1,0 +1,19 @@
+<script>
+let area = parseFloat(prompt("Tamanho da área a ser pintada (em metros quadrados): "));
+
+let litrosNecessarios = area / 6;
+
+
+let latasNecessarias = Math.ceil(litrosNecessarios / 18);
+
+let precoTotalLatas = latasNecessarias * 80;
+
+alert("Você precisará de " + latasNecessarias + " latas de 18 litros, ao custo de R$ " + precoTotalLatas + ".");
+
+
+let galoesNecessarios = Math.ceil(litrosNecessarios / 3.6);
+
+let precoTotalGaloes = galoesNecessarios * 25;
+
+alert("Você precisará de " + galoesNecessarios + " galões de 3,6 litros, ao custo de R$ " + precoTotalGaloes + ".");
+</script>

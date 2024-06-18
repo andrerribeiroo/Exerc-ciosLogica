@@ -1,3 +1,71 @@
 <script>
-    
+    let i = parseInt(prompt("Digite um valor inteiro e positivo: "));
+let a = parseFloat(prompt("Digite um valor real: "));
+let b = parseFloat(prompt("Digite um valor real: "));
+let c = parseFloat(prompt("Digite um valor real: "));
+
+if (i === 1) {
+  
+  if (a > b) {
+    let temp = a;
+    a = b;
+    b = temp;
+  }
+  if (a > c) {
+    let temp = a;
+    a = c;
+    c = temp;
+  }
+  if (b > c) {
+    let temp = b;
+    b = c;
+    c = temp;
+  }
+
+  alert("Ordem crescente: " + a + ", " + b + ", " + c);
+} 
+
+else if (i === 2) {
+
+  if (a < b) {
+    let temp = a;
+    a = b;
+    b = temp;
+  }
+  if (a < c) {
+    let temp = a;
+    a = c;
+    c = temp;
+  }
+  if (b < c) {
+    let temp = b;
+    b = c;
+    c = temp;
+  }
+
+  alert("Ordem decrescente: " + a + ", " + b + ", " + c);
+} 
+
+else if (i === 3) {
+
+  if (a > b && a > c) {
+    let temp = a;
+    a = b;
+    b = temp;
+  } else if (b > a && b > c) {
+    let temp = b;
+    b = a;
+    a = temp;
+  } else {
+    let temp = c;
+    c = a;
+    a = temp;
+  }
+
+  alert("Maior valor no meio: " + a + ", " + b + ", " + c);
+} 
+
+else {
+  alert("Valor de i inválido!");
+}
 </script>
