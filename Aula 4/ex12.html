@@ -1,0 +1,20 @@
+<script>
+
+    for (let i = 0; i < 20; i++) {
+
+      let n = parseInt(prompt("Digite o valor de n (" + (i + 1) + "/20): "));
+
+      alert("Tabuada de " + n + ":");
+
+      let tabuada = "";
+
+      for (let j = 1; j <= n; j++) {
+        tabuada += j + " x " + n + " = " + (j * n) + "\n";
+      }
+
+      alert(tabuada);
+
+      alert("proxima conta.");
+    }
+
+  </script>

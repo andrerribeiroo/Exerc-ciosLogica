@@ -1,0 +1,18 @@
+<script>
+    
+    let n = parseInt(prompt("Digite o número de termos da progressão: "));
+    let a1 = parseInt(prompt("Digite o primeiro termo da progressão: "));
+    let r = parseInt(prompt("Digite a razão da progressão: "));
+  
+    let soma = 0;
+    let termos = "";
+  
+    for (let i = 0; i < n; i++) {
+      let an = a1 + i * r;
+      termos += an + " ";
+      soma += an;
+    }
+  
+    alert("Os " + n + " termos da progressão são: " + termos);
+    alert("A soma dos elementos é: " + soma);
+  </script>
