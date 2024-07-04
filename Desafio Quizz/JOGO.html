@@ -1,0 +1,33 @@
+<script>
+    
+        let palavra = ["holanda", "brasil", "espanha"];
+        let palavraEscolhida = palavra[Math.floor(Math.random() * palavra.length)];
+        let perguntas = prompt("Qual palavra se forma : " + embaralharPalavra() );
+
+        function embaralharPalavra(palavra){
+
+            let palavraEmbaralhada = [];
+            palavraEmbaralhada = palavraEscolhida.split('');
+            palavraEmbaralhada = palavraEmbaralhada.sort();
+            let x  = palavraEmbaralhada.join('');
+
+            return x;
+
+        }
+
+        function verificarPalavra(palavra, palavraEmbaralhada){
+
+            if(perguntas == palavra){
+
+                alert("parabens voce acertou");
+                }
+                
+                else{
+                    alert("voce errou, a palavra era " + palavra);
+                    }
+        }
+
+        alert(verificarPalavra(palavraEscolhida, x));
+    
+
+</script>

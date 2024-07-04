@@ -1,0 +1,55 @@
+<script>
+
+    let valor1 = parseFloat(prompt("Informe o PRIMEIRO valor"));
+    let valor2 = parseFloat(prompt("Informe o SEGUNDO valor"));
+    let Calculador = prompt("Informe o símbolo de operador aritmético Ex : (+ - / *).");
+  
+    let resultado;
+  
+    switch (Calculador) {
+      case "+":
+        soma(valor1, valor2);
+        break;
+
+      case "-":
+        sub(valor1, valor2);
+        break;
+
+      case "*":
+        multi(valor1, valor2);
+        break;
+
+      case "/":
+        divi(valor1, valor2);
+        break;
+      default:
+        alert("Operação inválida");
+    }
+  
+    function soma(valor1, valor2) {
+      resultado = valor1 + valor2;
+      alert("Resultado da operação: " + resultado);
+    }
+  
+    function sub(valor1, valor2) {
+      resultado = valor1 - valor2;
+      alert("Resultado da operação: " + resultado);
+    }
+  
+    function divi(valor1, valor2) {
+      if (valor2!= 0) {
+        resultado = valor1 / valor2;
+        alert("Resultado da operação: " + resultado);
+      } 
+      
+      else {
+        alert("Erro: divisão por zero!");
+      }
+    }
+  
+    function multi(valor1, valor2) {
+      resultado = valor1 * valor2;
+      alert("Resultado da operação: " + resultado);
+    }
+    
+  </script>
